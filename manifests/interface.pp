@@ -363,6 +363,7 @@ define network::interface (
         }
 
         concat::fragment { "interface-${name}":
+          ensure  => $ensure,
           target  => '/etc/network/interfaces',
           content => template($template),
           order   => $manage_order,
