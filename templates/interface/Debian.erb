@@ -135,6 +135,9 @@ allow-hotplug <%= @interface %>
 <% if @bond_mode -%>
     bond-mode <%= @bond_mode %>
 <% end -%>
+<% if @bond_lacp_rate -%>
+    bond-lacp-rate <%= @bond_lacp_rate %>
+<% end -%>
 <% if @bond_miimon -%>
     bond-miimon <%= @bond_miimon %>
 <% end -%>

@@ -163,6 +163,7 @@ define network::interface (
   # For bonding
   $slaves          = [ ],
   $bond_mode       = undef,
+  $bond_lacp_rate  = undef,
   $bond_miimon     = undef,
   $bond_downdelay  = undef,
   $bond_updelay    = undef,
